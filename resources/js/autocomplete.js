@@ -1,4 +1,4 @@
-import swal from "sweetalert";
+import { showNotification } from "./notifications";
 
 document.addEventListener("DOMContentLoaded", function () {
     const locationInput = document.getElementById("location-input");
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         autocomplete.addListener("place_changed", function () {
             const place = autocomplete.getPlace();
             if (!place.geometry) {
-                swal(
+                showNotification(
                     "Erro",
                     "Nenhuma informação de localização disponível para o local inserido.",
                     "error"
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 "Local selecionado:",
                 place.geometry.location.toString()
             );
-            swal(
+            showNotification(
                 "Sucesso",
                 "Local selecionado: " + place.geometry.location.toString(),
                 "success"
