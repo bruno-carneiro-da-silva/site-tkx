@@ -108,7 +108,7 @@ button {
 
 a {
   display: inline-block;
-  color: var(--secondary-color);
+  color: var(--white-color);
   text-decoration: none;
 }
 
@@ -362,6 +362,20 @@ strong {
   padding: 10px 20px;
 }
 
+.app-store-btn {
+  background: var(--p-color) !important;
+}
+
+.app-store-btn:hover {
+  background: var(--primary-color) !important;
+}
+
+.input-icon-white {
+    color: white;
+    font-size: 20px;
+
+}
+
 .custom-btn:hover {
   background: var(--custom-btn-bg-hover-color);
   color: var(--white-color);
@@ -382,6 +396,98 @@ strong {
 .custom-btn-bg-white {
   border-color: var(--white-color);
   color: var(--white-color);
+}
+
+/* scroll button */
+.scroll-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Inicialmente escondido */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: #ffc107; /* Cor de fundo */
+    color: white;
+    cursor: pointer;
+    z-index: 1000; /* Para garantir que o botão fique acima de outros elementos */
+}
+
+.scroll-btn:hover {
+    background-color: #e0a800; /* Cor de fundo ao passar o mouse */
+}
+
+.support-btn {
+    background-color: #ffc107;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* Alterado de right: 20px para left: 20px */
+    display: block;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.support-btn:hover {
+    background-color: #e0a800;
+}
+
+.support-btn i, .scroll-btn i {
+    font-size: 24px;
+    line-height: 50px;
+}
+
+/* chatbot container */
+
+.chat-container  {
+    bottom: 20px;
+    border-radius: 10px;
+    display: none;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    border: 1px solid #ccc;
+    background-color: white;
+    z-index: 1000;
+}
+
+.chatbot-title{
+    /* border-radius só em cima */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #fea500;
+    color: white;
+    padding: 10px;
+}
+.close-button{
+    float: right;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.company-btn, .driver{
+    background-color: var(--white-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-btn:hover , .driver:hover{
+    background-color: var(--primary-color) ;
+    color: var(--white-color) ;
 }
 
 .input-group-location {
@@ -460,6 +566,34 @@ strong {
   color: var(--link-hover-color);
 }
 
+
+/*---------------------------------------
+  DOWNLOAD APPS & INPUTS
+-----------------------------------------*/
+
+.download-app-div{
+    margin-bottom: 180px;
+}
+
+/*----------------------------------------
+    SIDEBAR
+-----------------------------------------*/
+.filter-component {
+    margin-bottom: 20px;
+    line-height: 30px;
+    align-items: center;
+}
+.form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-check-input {
+    margin-right: 10px;
+    margin-bottom: 7px;
+}
+
 /*---------------------------------------
   NAVIGATION BAR & OFFCANVAS
 -----------------------------------------*/
@@ -499,7 +633,7 @@ strong {
 }
 
 .navbar {
-  background: transparent;
+  background: var(--dark-color);
   z-index: 99;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -525,7 +659,6 @@ strong {
 
 .navbar-brand-image {
   width: 56px;
-  height: 38px;
 }
 
 .navbar-brand-text {
@@ -1197,6 +1330,34 @@ strong {
   padding-left: 20px;
   outline: none;
 }
+
+#originSelect {
+    width: 100%;
+    padding: 8px;
+    border-radius: var(--border-radius-large);
+    border: 1px solid #ccc;
+    background-color: #fff;
+    /* appearance: none; */
+    padding-left: 20px;
+    /* -webkit-appearance: none;
+    -moz-appearance: none; */
+}
+
+#originSelect optgroup {
+    font-weight: bold;
+    color: #333;
+    padding: 5px 0;
+    border-radius: var(--border-radius-large);
+}
+
+optgroup{
+    border-radius: var(--border-radius-large) !important;
+}
+
+#originSelect option {
+    padding-left: 10px;
+}
+
 
 .custom-form .form-control:focus,
 .custom-form .form-control:hover {
