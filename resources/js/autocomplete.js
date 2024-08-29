@@ -30,11 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 );
                 return;
             }
-            // Você pode usar place.geometry.location para obter a latitude e longitude
-            console.log(
-                "Local selecionado:",
-                place.geometry.location.toString()
-            );
+
             showNotification(
                 "Sucesso",
                 "Local selecionado: " + place.geometry.location.toString(),
@@ -47,13 +43,13 @@ document.addEventListener("DOMContentLoaded", function () {
         "input",
         debounce(function () {
             initializeAutocomplete(locationInput);
-        }, 200)
+        }, 2000)
     );
 
     destinationInput.addEventListener(
         "input",
         debounce(function () {
             initializeAutocomplete(destinationInput);
-        }, 200)
+        }, 2000)
     );
 });
