@@ -37,7 +37,7 @@
             />
             <span class="navbar-brand-text">
             Mobilidade
-            <small>Urbana</small>
+            <small>Inteligente</small>
             </span>
         </a>
 

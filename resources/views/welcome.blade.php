@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title', 'TKX Mobilidade Urbana')
+@section('title', 'TKX Mobilidade inteligente')
 
 @section('content')
     <main>
@@ -632,5 +632,5 @@
             </div>
         </section>
         </main>
-        
+
 @endsection
