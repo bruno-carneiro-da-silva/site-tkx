@@ -30,12 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 );
                 return;
             }
-
-            showNotification(
-                "Sucesso",
-                "Local selecionado: " + place.geometry.location.toString(),
-                "success"
-            );
         });
     }
 

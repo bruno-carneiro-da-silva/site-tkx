@@ -124,7 +124,7 @@
             <div class="row">
                 <div class="col-lg-6 col-12 mb-lg-5 mb-lg-0">
                 <h1 class="cd-headline rotate-1 text-white mb-4 pb-2">
-                    <span>TKX mobilidade Urbana é</span>
+                    <span>TKX mobilidade inteligente é</span>
                     <span class="cd-words-wrapper">
                     <b class="is-visible">Moderna</b>
                     <b>Praticidade</b>

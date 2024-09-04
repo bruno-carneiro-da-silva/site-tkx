@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ChatbotController;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -32,3 +34,5 @@ Route::get('/lista-de-fretes', function() {
 Route::get('/lista-de-cidades', function() {
     return view('city-list');
 });
+
+Route::post('/api/save-choices', [ChatbotController::class, 'saveChoices']);

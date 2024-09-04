@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>@yield('title')</title>
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -24,8 +25,9 @@
     </button>
     {{-- support button --}}
     <x-chatbot-window />
+    <x-success-msg />
     <button id="supportBtn" name="support-btn" class="support-btn bg-warning cursor-pointer border-transparent">
-        <i class='bx bx-phone'></i>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-call"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/><path d="M14.05 2a9 9 0 0 1 8 7.94"/><path d="M14.05 6A5 5 0 0 1 18 10"/></svg>
     </button>
     <nav class="navbar navbar-expand-lg">
         <div class="container">
@@ -41,16 +43,9 @@
             </span>
         </a>
 
-        <div class="d-lg-none ms-auto me-3">
-            <a
-            class="btn custom-btn custom-border-btn"
-            data-bs-toggle="offcanvas"
-            href="#offcanvasExample"
-            role="button"
-            aria-controls="offcanvasExample"
-            >Login</a
-            >
-        </div>
+        {{-- <div class="d-lg-none ms-auto me-3">
+            <x-login-toggle button-text="Entrar" />
+        </div> --}}
 
         <button
             class="navbar-toggler"
@@ -73,29 +68,29 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link click-scroll" href="#section_2">Parceiro</a>
+                <a class="nav-link click-scroll" href="{{ url('/') }}#section_2">Parceiro</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link click-scroll" href="#section_3">Dirigir</a>
+                <a class="nav-link click-scroll"href="{{ url('/') }}#section_3">Dirigir</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link click-scroll" href="#section_4">FAQs</a>
+                <a class="nav-link click-scroll" href="{{ url('/') }}#section_4">FAQs</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link click-scroll" href="#section_5">Contato</a>
+                <a class="nav-link click-scroll" href="{{ url('/') }}#section_5">Contato</a>
             </li>
 
             <li class="nav-item dropdown">
                 <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarLightDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarLightDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
                 >Páginas</a
                 >
 
@@ -118,14 +113,7 @@
             </ul>
 
             <div class="d-none d-lg-block ms-lg-3">
-            <a
-                class="btn custom-btn custom-border-btn"
-                data-bs-toggle="offcanvas"
-                href="#offcanvasExample"
-                role="button"
-                aria-controls="offcanvasExample"
-                >Login</a
-            >
+                <x-login-toggle button-text="Entrar" />
             </div>
         </div>
         </div>

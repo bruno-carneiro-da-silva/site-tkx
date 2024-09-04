@@ -2,8 +2,8 @@
 @section('title', 'Termos de Privacidade')
 
 @section('content')
-    <div class="container mt-5">
-        <h2>Termos de Privacidade</h2>
+    <div class="container mt-5" >
+        <h2 class="privacy-terms">Termos de Privacidade</h2>
 
         <p>Sabemos o quanto é importante para você conhecer e estar seguro sobre a utilização dos seus dados pessoais. Por isso, nos preocupamos em esclarecer e divulgar nossa política de utilização dessas informações. Assim, você poderá entender melhor quais informações obtemos e como as utilizamos. Aproveite de forma consciente e segura tudo o que temos para oferecer. Para assegurar regras claras e precisas, podemos alterar essa política de tempos em tempos, e sendo assim, recomendamos sua leitura periodicamente.</p>
 
@@ -93,7 +93,6 @@
 
             <p>Anúncios pessoais e salas de bate-papo são de domínio público. Qualquer informação que você torne disponível em salas de bate-papo, em fóruns ou em anúncios pessoais estará disponível a qualquer pessoa com acesso a esses locais.</p>
 
-        <h2>Política de Cookies TKX</h2>
-
+            <span class="container mb-4 ms-auto d-flex justify-content-end">Política de Cookies TKX</span>
     </div>
 @endsection
