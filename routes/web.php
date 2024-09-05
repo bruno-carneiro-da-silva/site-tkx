@@ -1,8 +1,7 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FreightController;
 use App\Http\Controllers\ChatbotController;
-
 
 Route::get('/', function () {
     return view('welcome');
@@ -27,9 +26,8 @@ Route::get('/aplicativos', function() {
     return view('download-app');
 });
 
-Route::get('/lista-de-fretes', function() {
-    return view('freight-list');
-});
+Route::get('/lista-de-fretes', [FreightController::class, 'index']);
+Route::get('/freight/{id}', [FreightController::class, 'show'])->name('freight.show');
 
 Route::get('/lista-de-cidades', function() {
     return view('city-list');

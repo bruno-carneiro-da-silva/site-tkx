@@ -3,14 +3,13 @@
 @section('title', 'Lista de fretes')
 
 @section('content')
-<div class="container" style="margin-top: 5rem; margin-bottom: 30px">
+<div class="container freight-list-container">
     <div class="row justify-content-center">
         <div class="col-md-3 p-3 bg-light mt-5" style=" border-radius: 8px;">
             <x-location-filter />
             <hr />
 
             <x-radio-range-filter title="Raio (Distância)" :options="[50, 100, 200]" name="raio" />
-
 
             <x-truck-body-filter
                 title="Veículo"
@@ -41,8 +40,13 @@
             <x-filter-component title="Complemento" :options="['Sim', 'Não', 'Ambos']" name="complemento" />
 
         </div>
-        <div class="col-md-8" style="margin-top: 2rem;">
-            <x-available-freight />
+        <div class="col-md-8 mt-5">
+            <x-available-freight :freights="$freights" />
+            @if (count($freights) === 0)
+                <div class="alert alert-info mt-3" role="alert">
+                    Nenhum frete disponível
+                </div>
+            @endif
         </div>
     </div>
 </div>
