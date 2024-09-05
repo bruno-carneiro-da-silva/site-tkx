@@ -68,7 +68,11 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" href="{{ url('/') }}#section_2">Parceiro</a>
+                    <a class="nav-link click-scroll" href="{{ url('/') }}#section_2">Corrida</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link click-scroll" href="{{ url('/') }}#section_3">Parceiro</a>
                 </li>
 
                 <li class="nav-item">
