@@ -188,53 +188,114 @@
             </svg>
         </section>
 
-        <section class="about-section section-padding" id="section_2">
+
+        <section class="membership-section section-padding" id="section_2">
             <div class="container">
-            <div class="row">
-                <div
-                class="col-lg-6 partner-driver d-flex align-items-center justify-content-center col-12 me-auto mb-4 mb-lg-0 border p-4"
-                >
-                <div>
-                    <h2>
-                    Na <strong style="color: var(--primary-color)">TKX</strong>,
-                    você pode torna-se um dos nossos motorista parceiros e
-                    incrementar seus ganhos.
-                    </h2>
-
-                    <p>
-                    Você poderá aproveitar os planos de incentivo da TKX para
-                    assegurar sua renda.
-                    </p>
-
-                    <div class="custom-btn-group">
-                    <a
-                        href="https://tkx.truck.log.br/socket/public/expedition/admin/app/tkx/login"
-                        target="_blank"
-                        class="btn custom-btn smoothscroll me-3"
-                        >Quero ser um motorista parceiro</a
-                    >
+                <div class="row">
+                    {{-- matriz de transporte --}}
+                    <div class="col-lg-12 col-12 text-center mx-auto mb-lg-5 mb-4">
+                        <h1>Para motoristas de carga</h1>
                     </div>
-                </div>
-                </div>
+                    <div class="col-lg-6 partner-driver col-12 mb-2 mb-lg-0 d-flex border align-items-center d-flex align-items-center justify-content-center col-12 me-auto mb-lg-0 p-4">
+                        <div>
+                            <h2 class="mb-4 pb-lg-2">Matriz de transporte</h2>
 
-                <div class="col-lg-5 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
-                <div class="member-block">
-                    <div class="member-block-image-wrap">
-                    <!-- Adicione a imagem abaixo dos quadrados -->
-                    <img
-                        src="images/driver.jpeg"
-                        class="member-block-image img-fluid"
-                        alt=""
-                    />
-
-                    <div
-                    class="member-block-image-overlay"></div>
+                            <div class="table-responsive">
+                            <p>
+                                O aplicativo, projetado para motoristas parceiros, é
+                                confiável e fácil de usar. Tanto a empresa quanto os
+                                motoristas de carga, ele fornece todas as informações
+                                necessárias para se tornar um motorista parceiro da Truck
+                            </p>
+                            <div class="custom-btn-group">
+                                <a
+                                href="https://play.google.com/store/apps/developer?id=Via+Integra+Tecnologia+Ltda&hl=pt_BR"
+                                target="_blank"
+                                class="btn custom-btn smoothscroll me-3"
+                                >Baixar o aplicativo</a
+                                >
+                            </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                </div>
-            </div>
+
+                    <div class="col-lg-5 col-12 mx-auto d-flex align-items-center">
+                        <img
+                            src="images/135° 30° 12° (2).png"
+                            class=" gps-image img-fluid"
+                            alt="gps-image"
+                            srcset=""
+                        />
+                    </div>
+
+                    <div class="col-lg-12 col-12 text-start mx-auto mb-lg-5 mb-4" style="margin-top: 50px;">
+                        <h1>Como a Truck Tkx funciona</h1>
+                        <p>Facilitamos a conexão entre empresas e cargas em todo o Brasil, atendendo tanto frotistas quanto caminhoneiros autônomos.</p>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex flex-column flex-lg-row justify-content-between gap-3">
+                                    <div class="card w-100" style="min-width: 200px;">
+                                        <div class="card-body d-flex flex-column">
+                                            <div class="rounded-circle bg-light mb-3 d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building-2">
+                                                    <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/>
+                                                    <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/>
+                                                    <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/>
+                                                    <path d="M10 6h4"/>
+                                                    <path d="M10 10h4"/>
+                                                    <path d="M10 14h4"/>
+                                                    <path d="M10 18h4"/>
+                                                </svg>
+                                            </div>
+                                            <h5 class="card-title fw-bold">Para empresas</h5>
+                                            <p class="card-text mb-3">
+                                                As empresas anunciam fretes e cargas disponíveis.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card w-100" style="min-width: 200px;">
+                                        <div class="card-body d-flex flex-column">
+                                            <div class="rounded-circle bg-light mb-3 d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-truck">
+                                                    <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/>
+                                                    <path d="M15 18H9"/>
+                                                    <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/>
+                                                    <circle cx="17" cy="18" r="2"/>
+                                                    <circle cx="7" cy="18" r="2"/>
+                                                </svg>
+                                            </div>
+                                            <h5 class="card-title fw-bold">Para caminhoneiros</h5>
+                                            <p class="card-text">
+                                                Os motoristas procuram por fretes que estão
+                                                disponíveis e compatíveis com seus veículos.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card w-100" style="min-width: 200px;">
+                                        <div class="card-body d-flex flex-column">
+                                            <div class="rounded-circle bg-light mb-3 d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-check-2">
+                                                    <path d="M4 22h14a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v4"/>
+                                                    <path d="M14 2v4a2 2 0 0 0 2 2h4"/>
+                                                    <path d="m3 15 2 2 4-4"/>
+                                                </svg>
+                                            </div>
+                                            <h5 class="card-title fw-bold">Negociação</h5>
+                                            <p class="card-text">
+                                                Tanto a empresa quanto o motorista fazem a negociação do frete diretamente.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
             </div>
         </section>
+
 
         <section class="section-bg-image">
             <svg
@@ -271,42 +332,61 @@
 
             <div class="container">
             <div class="row">
+                <h1 class="text-center text-white mb-5">Outros segmentos de atuação</h1>
                 <div class="col-lg-6 col-12">
-                <div class="section-bg-image-block">
-                    <h2 class="mb-lg-3">Cadastre-se na nossa newsletter</h2>
-
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                    do eiusmod tempor ut labore et dolore.
-                    </p>
-
-                    <form
-                    action="#"
-                    method="get"
-                    class="custom-form mt-lg-4 mt-2"
-                    role="form"
-                    >
-                    <div class="input-group input-group-lg">
-                        <span
-                        class="input-group-text bi-envelope"
-                        id="basic-addon1"
-                        ></span>
-
-                        <input
-                        type="email"
-                        name="email"
-                        pattern="[^ @]*@[^ @]*"
-                        class="form-control"
-                        placeholder="Endereço de Email"
-                        required=""
-                        />
-
-                        <button type="submit" class="form-control">
-                        Cadastrar
-                        </button>
+                    <div class="section-bg-image-block">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="rounded-circle bg-light d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-package-check">
+                                    <path d="m16 16 2 2 4-4"/>
+                                    <path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14"/>
+                                    <path d="m7.5 4.27 9 5.15"/>
+                                    <polyline points="3.29 7 12 12 20.71 7"/>
+                                    <line x1="12" x2="12" y1="22" y2="12"/>
+                                </svg>
+                            </div>
+                            <h2 class="ms-4">TKX Entregador</h2>
+                        </div>
+                        <p class="mb-3">
+                            Nosso aplicativo permite que mototaxistas recebam novas corridas e aumentem o faturamento diário do profissional.
+                        </p>
+                        <div class="d-flex justify-content-start gap-3">
+                            <a href="https://play.google.com/store/apps/details?id=br.com.tkxentregas.taxi.taximachine" class="button-link" target="_blank">
+                                Saiba mais
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right">
+                                    <path d="M18 8L22 12L18 16"/>
+                                    <path d="M2 12H22"/>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
-                    </form>
                 </div>
+                <div class="col-lg-6 col-12">
+                    <div class="section-bg-image-block">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="rounded-circle bg-light d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-dollar-sign">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/>
+                                    <path d="M12 18V6"/>
+                                </svg>
+                            </div>
+                            <h2 class="ms-4">Taxibras</h2>
+                        </div>
+                        <p class="mb-3">
+                            Nosso aplicativo permite que motoristas, entregadores recebam seus pagamentos e tenham
+                            em suas mãos um controle financeiro.
+                        </p>
+                        <div class="d-flex justify-content-start gap-3">
+                            <a href="https://play.google.com/store/apps/details?id=com.taxibras&hl=pt_BR" class="button-link" target="_blank">
+                                Saiba mais
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right">
+                                    <path d="M18 8L22 12L18 16"/>
+                                    <path d="M2 12H22"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
             </div>
@@ -344,48 +424,53 @@
             </svg>
         </section>
 
-        <section class="membership-section section-padding" id="section_3">
+        <section class="about-section section-padding" id="section_3">
             <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-12 text-center mx-auto mb-lg-5 mb-4">
-                <h2><span>App</span> dos motoristas de carga</h2>
-                </div>
-
-                <div class="col-lg-6 col-12 mb-3 mb-lg-0 d-flex align-items-center">
+                <div
+                class="col-lg-6 partner-driver d-flex align-items-center justify-content-center col-12 me-auto mb-4 mb-lg-0 border p-4"
+                >
                 <div>
-                    <h2 class="mb-4 pb-lg-2">Matriz de transporte</h2>
+                    <h2>
+                    Na <strong style="color: var(--primary-color)">TKX</strong>,
+                    você pode torna-se um dos nossos motorista parceiros e
+                    incrementar seus ganhos.
+                    </h2>
 
-                    <div class="table-responsive">
                     <p>
-                        O aplicativo, projetado para motoristas parceiros, é
-                        confiável e fácil de usar. Tanto a empresa quanto os
-                        motoristas de carga, ele fornece todas as informações
-                        necessárias para se tornar um motorista parceiro da TKX
+                    Você poderá aproveitar os planos de incentivo da TKX para
+                    assegurar sua renda.
                     </p>
+
                     <div class="custom-btn-group">
-                        <a
-                        href="https://play.google.com/store/apps/developer?id=Via+Integra+Tecnologia+Ltda&hl=pt_BR"
+                    <a
+                        href="https://tkx.truck.log.br/socket/public/expedition/admin/app/tkx/login"
                         target="_blank"
                         class="btn custom-btn smoothscroll me-3"
-                        >Baixar o aplicativo</a
-                        >
-                    </div>
+                        >Quero ser um motorista parceiro</a
+                    >
                     </div>
                 </div>
                 </div>
 
-                <div class="col-lg-5 col-12 mx-auto d-flex align-items-center">
-                <img
-                    src="images/135° 30° 12° (2).png"
-                    class="member-block-image img-fluid"
-                    style="width: 600px; height: 400px; margin-top: 35px"
-                    alt="gps-image"
-                    srcset=""
-                />
+                <div class="col-lg-5 col-md-6 mt-3 col-12 mb-4 mb-lg-0 mb-md-0">
+                <div class="member-block">
+                    <div class="member-block-image-wrap">
+                        <img
+                            src="images/driver.jpeg"
+                            class="member-block-image img-fluid"
+                            alt="motorista segurando o celular"
+                        />
+                    <div
+                    class="member-block-image-overlay"></div>
+                    </div>
+                </div>
                 </div>
             </div>
             </div>
         </section>
+
+
 
         <section class="events-section section-bg section-padding" id="section_4">
             <div class="container">

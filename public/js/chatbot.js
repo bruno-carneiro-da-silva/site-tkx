@@ -24,6 +24,7 @@ const steps = [
             { text: "Embarcador", value: "Truck_Embarcador" },
             { text: "Transportadora", value: "Truck_Transportadora" },
             { text: "Operador logístico", value: "Truck_Operador_Logistico" },
+            { text: "Motorista", value: "Truck_Motorista" },
         ],
         parent: "Truck",
     },
@@ -74,6 +75,22 @@ const steps = [
             { text: "Sou cadastrado", value: "Sou_cadastrado" },
         ],
         parent: "Truck_Operador_Logistico",
+    },
+    {
+        question: "Quer se cadastrar ou já tem um cadastro?",
+        options: [
+            { text: "Cadastrar", value: "Cadastrar" },
+            { text: "Sou cadastrado", value: "Sou_cadastrado" },
+        ],
+        parent: "Truck_Motorista",
+    },
+    {
+        question: "Você quer fazer login ou precisa de atendimento?",
+        options: [
+            { text: "Login", value: "Login" },
+            { text: "Atendimento", value: "Atendimento" },
+        ],
+        parent: "Sou_cadastrado",
     },
     {
         question: "Você quer fazer login ou precisa de atendimento?",
@@ -198,9 +215,12 @@ function renderForm() {
                 <div class="mb-3">
                     <input type="email" class="form-control input-field"  placeholder="Seu email"   id="email" required>
                 </div>
-                <div class="mb-3">
-                    <input type="tel" class="form-control input-field"  placeholder="Seu telefone" id="phone" required>
+              <div class="mb-3 d-flex gap-2">
+                <div class="input-group">
+                    <input type="tel" class="form-control input-field me-2" placeholder="Seu telefone" id="phone" required>
+                    <input type="text" class="form-control input-field" placeholder="00.000.000/0000-00" id="cnpj" required>
                 </div>
+            </div>
                 <button type="submit" class="btn btn-secondary w-100">Enviar</button>
             </form>
         </div>
@@ -208,6 +228,31 @@ function renderForm() {
 
     const phoneInput = document.getElementById("phone");
     phoneInput.addEventListener("input", applyPhoneMask);
+    const cnpjInput = document.getElementById("cnpj");
+    cnpjInput.addEventListener("input", applyCnpjMask);
+    const emailInput = document.getElementById("email");
+    emailInput.addEventListener("input", validateEmail);
+}
+
+function validateEmail(event) {
+    const input = event.target;
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(input.value)) {
+        input.setCustomValidity("Por favor, insira um email válido.");
+    } else {
+        input.setCustomValidity("");
+    }
+}
+
+function applyCnpjMask(event) {
+    let value = event.target.value.replace(/\D/g, "");
+    if (value.length > 14) value = value.slice(0, 14);
+
+    value = value.replace(/^(\d{2})(\d)/, "$1.$2");
+    value = value.replace(/^(\d{2})\.(\d{3})(\d)/, "$1.$2.$3");
+    value = value.replace(/\.(\d{3})(\d)/, ".$1/$2");
+    value = value.replace(/(\d{4})(\d)/, "$1-$2");
+    event.target.value = value;
 }
 
 function applyPhoneMask(event) {

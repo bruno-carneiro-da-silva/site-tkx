@@ -505,6 +505,7 @@ strong {
     width: 100%;
     box-sizing: border-box;
     transition: all 0.5s ease;
+    margin-right: 10px;
 }
 
 .chatbot-title{
@@ -1048,12 +1049,34 @@ strong {
   BACKGROUND IMAGE SECTION
 -----------------------------------------*/
 .section-bg-image {
-  background-image: url("../images/automobile-4368663_1920.jpg");
+  /* background-image: url("../images/automobile-4368663_1920.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
   margin-bottom: -70px;
+  background-color: #000;
+}
+
+.button-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: transparent;
+    border-radius: 25px;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-link svg {
+    margin-left: 8px;
+}
+
+.button-link:hover {
+    background-color: rgb(236, 236, 236);
+    color: black;
 }
 
 .section-bg-image .container + svg {
@@ -1118,9 +1141,6 @@ strong {
 .partner-driver {
   border-radius: 20px;
   height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .member-block-image-wrap:hover .social-icon {
@@ -1144,6 +1164,12 @@ strong {
   width: 80%;
   height: 300px;
   border-radius: 20px;
+}
+
+.gps-image{
+    width: 600px;
+    height: 400px;
+    margin-top: 20px
 }
 .member-block-image-overlay{
     background-color: var(--dark-color);
@@ -1743,6 +1769,7 @@ optgroup{
 
   .section-bg-image-block {
     padding: 30px;
+    margin-bottom: 10px;
   }
 
   .contact-info-item {
