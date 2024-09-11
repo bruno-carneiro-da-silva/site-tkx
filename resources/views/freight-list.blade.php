@@ -9,6 +9,7 @@
             <x-location-filter />
             <hr />
 
+
             <x-radio-range-filter title="Raio (Distância)" :options="[50, 100, 200]" name="raio" />
 
             <x-truck-body-filter

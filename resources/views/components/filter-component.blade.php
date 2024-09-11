@@ -1,4 +1,4 @@
-<div class="filter-component">
+<div class="filter-component border" >
     <h5>{{ $title }}</h5>
     @foreach($options as $option)
         <div class="form-check">

@@ -33,9 +33,9 @@
             <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
                 <img
-                src="images/logo-fb.png"
-                class="navbar-brand-image img-fluid"
-                alt="TKX logo"
+                src="{{ asset('images/logo-fb.png') }}"
+                    class="navbar-brand-image img-fluid"
+                    alt="TKX logo"
                 />
                 <span class="navbar-brand-text">
                 Mobilidade
@@ -68,7 +68,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" href="{{ url('/') }}#section_2">Corrida</a>
+                    <a class="nav-link click-scroll" href="{{ url('/') }}#section_2">Aplicações</a>
                 </li>
 
                 <li class="nav-item">

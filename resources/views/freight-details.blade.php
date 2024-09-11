@@ -13,7 +13,7 @@
             <button class="btn btn-danger mb-5" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">Ver contatos</button>
         </div>
         <!-- Coluna da Direita -->
-        <div class="col-md-4">
+        <div class="col-md-4 mb-5">
             <!-- Detalhes da Empresa -->
             <div class="card">
                 <div class="card-header">

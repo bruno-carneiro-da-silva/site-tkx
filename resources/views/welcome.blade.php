@@ -107,14 +107,88 @@
             </svg>
         </div>
 
-        <section class="hero-section-main mx-auto d-flex justify-content-center align-items-center bg-black text-center" id="section_1">
+        <section class="hero-section-principal d-flex flex-row justify-content-start align-items-center" id="section_1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path
+                    fill="#000"
+                    fill-opacity="1"
+                    d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"
+                ></path>
+            </svg>
+            <div class="hero-content">
+                <h1 class="hero-title">CONEXÃO LOGÍSTICA</h1>
+                <p class="hero-description">Transporte digital integrado</p>
+                <div class="tracking-menu-container">
+                    <h2 class="text-white mb-4">Nós entregamos, rastreamos e enviamos</h2>
+                    <ul class="nav nav-tabs" id="trackingTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="tracking-tab" data-bs-toggle="tab" data-bs-target="#tracking" type="button" role="tab" aria-controls="tracking" aria-selected="true">RASTREAR</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="rate-ship-tab" data-bs-toggle="tab" data-bs-target="#rate-ship" type="button" role="tab" aria-controls="rate-ship" aria-selected="false">TAXA & ENVIO</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="trackingTabContent">
+                        <div class="tab-pane fade show active" id="tracking" role="tabpanel" aria-labelledby="tracking-tab">
+                            <div class="tracking-form mt-4">
+                                <form>
+                                    <div class="input-group mb-2">
+                                        <input type="text" class="form-control tracking-input" placeholder="Código do Rastreamento" aria-label="Tracking ID">
+                                        <button class="btn btn-yellow" type="button">RASTREAR</button>
+                                    </div>
+                                    <small class="form-text text-muted mt-5 text-white-custom">
+                                        Veja o código de rastreamento no documento de envio. <a href="#" class="help-link">Ajuda</a>
+                                    </small>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="rate-ship" role="tabpanel" aria-labelledby="rate-ship-tab">
+                            <p>Avaliar e enviar conteúdo vai aqui.</p>
+                        </div>
+                    </div>
+                </div>
+                <span>Solução completa de ponto a ponto, mobilidade e segurança na palma da mão!</span>
+            </div>
+            <div class="hero-image"></div>
+            <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path
+                    fill="rgba(255, 255, 255, 1)"
+                    d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z"
+                    stroke-width="0"
+                ></path>
+                <path
+                    fill="rgba(255, 255, 255, 1)"
+                    d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z"
+                    stroke-width="0"
+                ></path>
+                <path
+                    fill="rgba(255, 255, 255, 1)"
+                    d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z"
+                    stroke-width="0"
+                ></path>
+                <path
+                    fill="rgba(255, 255, 255, 1)"
+                    d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z"
+                    stroke-width="0"
+                ></path>
+                <path
+                    fill="rgba(255, 255, 255, 1)"
+                    d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z"
+                    stroke-width="0"
+                ></path>
+            </svg>
+        </section>
+
+        <section class="hero-section-main mx-auto d-flex justify-content-center align-items-center bg-black text-center" id="section_2">
+
             <div class="container d-flex align-items-center section-content">
                 <div class="row w-100 d-flex align-items-center flex-lg-row flex-column-reverse">
                     <div class="col-lg-6 col-12 text-container">
                         <h1 class="text-white mb-4 pb-2 title">
-                            CONEXÃO LOGÍSTICA
+                            A CARA DAS NOSSAS APLICAÇÕES
                         </h1>
-                        <h4 class="text-white description">Solução completa de ponto a ponto, mobilidade e segurança na palma da mão!</h4>
+                        <h2 class="text-white">Tecnologias de ponta</h2>
+                        <h4 class="text-white description">Solução completa de ponto a ponto, e com suporte a todas as plataformas!</h4>
 
                         <div class="row mt-4 align-items-center">
                             <div class="col-auto mb-4">
@@ -141,12 +215,10 @@
                     </div>
                 </div>
             </div>
+
         </section>
 
-
-
-
-        <section class="hero-section d-flex justify-content-center align-items-center" id="section_2">
+        <section class="hero-section d-flex justify-content-center align-items-center">
             <div class="section-overlay"></div>
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -218,7 +290,6 @@
             </svg>
         </section>
 
-
         <section class="membership-section section-padding" id="section_3">
             <div class="container">
                 <div class="row">
@@ -269,7 +340,7 @@
                                     <div class="card w-100" style="min-width: 200px;">
                                         <div class="card-body d-flex flex-column">
                                             <div class="rounded-circle bg-light mb-3 d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building-2">
                                                     <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/>
                                                     <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/>
                                                     <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/>
@@ -288,7 +359,7 @@
                                     <div class="card w-100" style="min-width: 200px;">
                                         <div class="card-body d-flex flex-column">
                                             <div class="rounded-circle bg-light mb-3 d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-truck">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-truck">
                                                     <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/>
                                                     <path d="M15 18H9"/>
                                                     <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/>
@@ -306,7 +377,7 @@
                                     <div class="card w-100" style="min-width: 200px;">
                                         <div class="card-body d-flex flex-column">
                                             <div class="rounded-circle bg-light mb-3 d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-check-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-check-2">
                                                     <path d="M4 22h14a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v4"/>
                                                     <path d="M14 2v4a2 2 0 0 0 2 2h4"/>
                                                     <path d="m3 15 2 2 4-4"/>
@@ -319,13 +390,56 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="container my-5 services-section">
+                                    <div class="row align-items-center">
+                                        <!-- Texto da esquerda -->
+                                        <div class="col-lg-4 col-md-12 text-left mt-3 mb-4 mb-lg-0">
+                                            <h1 class="display-5 font-weight-bold">Nossos recursos<br>para sempre te atender da melhor forma</h1>
+                                        </div>
+
+                                        <!-- Números da direita -->
+                                        <div class="col-lg-8 col-md-12 p-4">
+                                            <div class="row">
+                                                <!-- Primeiro bloco de números -->
+                                                <x-number-block
+                                                icon='<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hand-coins"><path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17"/><path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"/><path d="m2 16 6 6"/><circle cx="16" cy="9" r="2.9"/><circle cx="6" cy="5" r="3"/></svg>'
+                                                text="Unidade integrada"
+                                            />
+                                            <x-number-block
+                                                icon='<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-range"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4"/><path d="M3 10h18"/><path d="M8 2v4"/><path d="M17 14h-6"/><path d="M13 18H7"/><path d="M7 14h.01"/><path d="M17 18h.01"/></svg>'
+                                                text="Módulo fiscal completo"
+                                            />
+
+                                            </div>
+                                            <div class="row">
+                                                <!-- Segundo bloco de números -->
+                                                <x-number-block
+                                                icon='<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wallet"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg>'
+                                                text="Meios de pagamento"
+                                            />
+                                            <x-number-block
+                                                icon='<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-truck"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg>'
+                                                text="Gestão de frota"
+                                            />
+                                            <x-number-block
+                                                icon='<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-megaphone"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>'
+                                                text="Gerenciamento de risco"
+                                            />
+                                            <x-number-block
+                                                icon='<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bus"><path d="M8 6v6"/><path d="M15 6v6"/><path d="M2 12h19.6"/><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"/><circle cx="7" cy="18" r="2"/><path d="M9 18h5"/><circle cx="16" cy="18" r="2"/></svg>'
+                                                text="Gestão de frota"
+                                            />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
                  </div>
             </div>
         </section>
-
 
         <section class="section-bg-image">
             <svg
@@ -499,8 +613,6 @@
             </div>
             </div>
         </section>
-
-
 
         <section class="events-section section-bg section-padding" id="section_5">
             <div class="container">

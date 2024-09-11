@@ -9,7 +9,7 @@
 
             {{-- download app buttons & image --}}
             <div class="download-app-div row align-items-center">
-                <div class="col-lg-5 col-12 me-auto">
+                <div class="col-lg-5 col-md-6 col-12 me-auto">
                     <h2>Como faço para baixar o app?</h2>
                     <p>
                         Para baixar o app, basta acessar a loja de aplicativos do seu
@@ -17,48 +17,55 @@
                         aguarde o download.
                     </p>
 
-                        <div class="row">
-                            <div class="col-lg-12 col-12 d-flex justify-content-start">
-                                <div class="custom-btn-group">
-                                    <a
-                                        href="https://play.google.com/store/apps/developer?id=Via+Integra+Tecnologia&pli=1"
-                                        target="_blank"
-                                        class="btn custom-btn smoothscroll me-3"
-                                    >
-                                    {{-- crie uma tag i com uma seta na horizontal --}}
-                                    <span style="font-size: 18px; margin-right: 5px;">Google Play</span>
-                                    <span class="input-icon">&#10148;</span>
+                    <div class="row">
+                        <div class="d-flex flex-column align-items-start justify-content-start">
+                            <div class="custom-btn-group">
+                                <a
+                                    href="https://play.google.com/store/apps/developer?id=Via+Integra+Tecnologia&pli=1"
+                                    target="_blank"
+                                    class="btn custom-btn smoothscroll mb-3 w-100"
+                                >
+                                    <span class="fs-5 me-1">Google Play</span>
+                                    <span class="input-icon-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right">
+                                            <path d="M18 8L22 12L18 16"/>
+                                            <path d="M2 12H22"/>
+                                        </svg>
+                                    </span>
                                 </a>
                                 <a
                                     href="https://apps.apple.com/br/app/tkx-usu%C3%A1rio/id6476009058"
                                     target="_blank"
-                                    class="btn custom-btn app-store-btn smoothscroll me-3"
+                                    class="btn custom-btn app-store-btn smoothscroll w-100"
                                 >
-                                    {{-- crie uma tag i com uma seta na horizontal --}}
-                                    <span style="font-size: 18px; margin-right: 5px;">App Store</span>
-                                    <span class=" input-icon-white">&#10148;</span>
+                                    <span class="fs-5 me-1">App Store</span>
+                                    <span class="input-icon-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right">
+                                            <path d="M18 8L22 12L18 16"/>
+                                            <path d="M2 12H22"/>
+                                        </svg>
+                                    </span>
                                 </a>
-                                </div>
                             </div>
                         </div>
-
+                    </div>
                 </div>
 
-                <div class="col-lg-6 col-2 justify-content-center">
+                <div class="col-lg-6 col-md-6 col-12 justify-content-center">
                     <div class="contact-info mt-5">
-                        <img style="width: 430px; height: 430px;" src="images/smartphone-1833950_1280.png" class="img-fluid" alt="driver" />
+                        <img src="images/smartphone-1833950_1280.png" class="img-fluid custom-width-430 custom-height-430" alt="driver" />
                     </div>
                 </div>
             </div>
 
             {{-- driver & inputs --}}
-            <div class="col-lg-5 col-12 me-auto">
+            <div class="col-lg-5 col-md-6 col-12 me-auto">
                 <div class="contact-info mt-5">
                     <img src="images/mercedes-benz-1036355_1920.jpg" class="img-fluid" alt="driver" />
                 </div>
             </div>
 
-            <div class="col-lg-6 col-12">
+            <div class="col-lg-6 col-md-6 col-12">
                 <div class="contact-info mt-5">
                     <h2>Quer solicitar uma corrida agora?</h2>
                     <p>
@@ -89,7 +96,7 @@
                         />
                     </div>
                 </div>
-                <div class="col-lg-12 col-12 d-flex justify-content-end">
+                <div class="col-12 d-flex justify-content-end">
                     <div class="custom-btn-group">
                         <a
                             href="https://tkx.truck.log.br/socket/public/expedition/admin/app/tkx/login"
