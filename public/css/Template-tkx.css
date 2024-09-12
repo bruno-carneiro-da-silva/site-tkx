@@ -1847,7 +1847,7 @@
   }
 
   .site-footer-title {
-    color: var(--blue-color);
+    color: var(--primary-color);
   }
 
   .site-footer p span {
@@ -1963,16 +1963,16 @@
   .social-icon {
     margin: 0;
     padding: 0;
-  }
+}
 
-  .social-icon-item {
+.social-icon-item {
     list-style: none;
     display: inline-block;
     vertical-align: top;
-  }
+}
 
-  .social-icon-link {
-    background: var(--blue-color);
+.social-icon-link {
+    background: var(--primary-color);
     border-radius: var(--border-radius-large);
     color: var(--white-color);
     font-size: var(--btn-font-size);
@@ -1982,12 +1982,19 @@
     height: 35px;
     line-height: 36px;
     transition: background 0.2s, color 0.2s;
-  }
+}
 
-  .social-icon-link:hover {
-    background: var(--primary-color);
+.social-icon-link:hover {
+    background: var(--link-hover-color);
     color: var(--white-color);
-  }
+}
+
+/* Adicionando regras específicas para os ícones */
+.social-icon-link.bi-instagram:hover::before,
+.social-icon-link.bi-twitter:hover::before,
+.social-icon-link.bi-whatsapp:hover::before {
+    color: var(--white-color);
+}
 
   /*---------------------------------------
           DOWNLOAD APP
@@ -2356,7 +2363,7 @@
   @media screen and (max-width: 390px) {
     .custom-btn {
       font-size: 12px;
-      
+
     }
      .hero-section-principal .col-lg-6 {
         padding-top: 190px;
@@ -2441,4 +2448,156 @@
   }
 .filter-block {
     margin-bottom: 1.5rem; /* Ajuste a margem conforme necessário */
+}
+/*
+/* body{
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+padding: 0;
+background: #23242a;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+flex-wrap: wrap
+} */
+
+/* //                     .dropdown{
+//                         position: relative;
+//                         margin: 2rem;
+//                         min-width: 15rem;
+//                     }
+//                     .dropdown * {
+//                         box-sizing: border-box;
+//                     }
+//                     .select{
+//                         display: flex;
+//                         justify-content: space-between;
+//                         align-items: center;
+//                         background: #2a2f3b;
+//                         border-radius: 0.5em;
+//                         border: 2px solid #2a2f3b;
+//                         cursor: pointer;
+//                         transition: background 0.3s;
+//                         color: #fff;
+//                     }
+//                     .select-clicked{
+//                         background: #2a2f3b;
+//                         border: 2px solid #26489a;
+//                         box-shadow: 0 0 0 0.8em #26489a;
+//                     }
+//                     .select:hover{
+//                         background: #323741;
+//                     }
+//                     .caret{
+//                         width: 0;
+//                         height: 0;
+//                         border-left: 5px solid transparent;
+//                         border-right: 5px solid transparent;
+//                         border-top: 6px solid #fff;
+//                         transition: 0.3s
+//                     }
+//                     .caret-rotate{
+//                         transform: rotate(180deg);
+//                     }
+//                     .menu{
+//                         list-style: none;
+//                         padding: 0.3em 0.5em;
+//                         background: #323741;
+//                         border: 1px solid #363a43;
+//                         box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+//                         border-radius: 0.5em;
+//                         color: #9fa5b5;
+//                         position: absolute;
+//                         top: 3em;
+//                         width: 100%;
+//                         transform: translateX(-50%);
+//                         opacity: 0;
+//                         display: none;
+//                         transition: 0.3s;
+//                         z-index: 1;
+//                     }
+//                     .menu li{
+//                         padding: 0.7em 0.5em;
+//                         margin: 0.3em 0;
+//                         border-radius: 0.5em;
+//                         cursor: pointer;
+//                     }
+
+//                     .menu li:hover{
+//                         background: #2a2d35;
+//                     }
+
+//                     .active{
+//                         background: #23242a;
+//                     }
+//                     .menu-open{
+//                         display: block;
+//                         opacity: 1;
+//                     }
+
+// */
+/* .dropdown {
+    position: relative;
+    margin: 2rem;
+    min-width: 15rem;
+} */
+
+.dropdown * {
+    box-sizing: border-box;
+}
+
+.select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2a2f3b;
+    border-radius: 0.5em;
+    border: 2px solid #2a2f3b;
+    cursor: pointer;
+    transition: background 0.3s;
+    color: #fff;
+}
+
+.select-clicked {
+    background: #2a2f3b;
+    border: 2px solid #26489a;
+    box-shadow: 0 0 0 0.8em #26489a;
+}
+
+.select:hover {
+    background: #323741;
+}
+
+.caret {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: 0.3s;
+}
+
+.caret-rotate {
+    transform: rotate(180deg);
+}
+
+.menu {
+    padding: 0.3em 0.5em;
+    background: #323741;
+    border: 1px solid #363a43;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    color: #9fa5b5;
+    position: absolute;
+    top: 3em;
+    width: 100%;
+    opacity: 0;
+    display: none;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.menu-open {
+    display: block;
+    opacity: 1;
 }
